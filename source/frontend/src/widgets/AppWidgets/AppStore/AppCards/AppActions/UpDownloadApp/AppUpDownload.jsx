@@ -11,7 +11,7 @@ export default function AppUpDownload({
     handleDownload
 }) {
     if (app.is_installed) {
-        if (!app.is_owner) {
+        if (!app.is_owner) { // for dev only, then change 
             if (app.is_from_store) {
                 const buttonText = "Publish Update"
                 return (<ConfirmAction onConfirm={handleUpload}
